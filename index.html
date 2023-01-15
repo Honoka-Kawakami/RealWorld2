@@ -113,9 +113,10 @@
                 direction = "北北西";
             }
 
-            let year;
-
-
+            //恵方だったら画像を表示させる
+            if (direction == "南南東") {
+                window.alert("南南東：恵方");
+            }
 
 
             document.querySelector("#direction").innerHTML =
@@ -191,6 +192,10 @@
                 })
                 .catch(console.error);
         }
+
+        function ehou() {
+
+        }
     </script>
 </head>
 
@@ -208,11 +213,14 @@
             </div>
 
             <h2 style="font-family:Yumincho">今年の西暦は？</h2>
+            　　　　　　　
+            <!-- 
             <select name="year" style="width:280px; font-size:30px">
                 <option value='2023'>2023年/令和5年</option>
                 <option value='2024'>2024年/令和6年</option>
                 <option value='2025'>2025年/令和7年</option>
             </select>
+             -->
         </div>
 
         <div>
