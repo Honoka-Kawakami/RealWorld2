@@ -114,9 +114,17 @@
             }
 
             //恵方だったら画像を表示させる
+            // if (direction == "南南東") {
+            //     window.alert("南南東：恵方");
+            // }
+
             if (direction == "南南東") {
-                window.alert("南南東：恵方");
+
             }
+            else {
+
+            }
+
 
 
             document.querySelector("#direction").innerHTML =
@@ -193,9 +201,6 @@
                 .catch(console.error);
         }
 
-        function ehou() {
-
-        }
     </script>
 </head>
 
@@ -230,6 +235,8 @@
             <!-- <li>【beta】<span id="beta"></span></li> -->
             <!-- <li>【gamma】<span id="gamma"></span></li> -->
         </div>
+
+        <img id="ehou" src="assets/image/oni.png">
 
 
     </ul>
